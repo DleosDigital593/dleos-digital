@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Leos Digital 593 | Publicidad Visual Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body { 
+            background-color: #05070a; 
+            color: white; 
+            font-family: 'Inter', sans-serif; 
+            scroll-behavior: smooth; 
+        }
+
+        /* FONDO DINÁMICO (HERO SLIDER) */
+        #hero-slider {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1.2s ease-in-out;
+            filter: brightness(0.3);
+        }
+
+        .accent-cyan { color: #00f2fe; text-shadow: 0 0 15px rgba(0,242,254,0.6); }
+        
+        /* TARJETAS ESTILO NEÓN */
+        .glow-card { 
+            background: rgba(13, 17, 23, 0.7);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 242, 254, 0.15);
+            transition: all 0.4s ease;
+        }
+        .glow-card:hover { 
+            border-color: #00f2fe; 
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .btn-neon {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: #05070a;
+            font-weight: 900;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+        }
+
+        .portfolio-img { height: 320px; overflow: hidden; position: relative; }
+        .portfolio-img img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .tech-tag {
+            position: absolute; bottom: 15px; right: 15px;
+            background: #00f2fe; color: #05070a;
+            padding: 6px 14px; border-radius: 20px; font-size: 11px; font-weight: 900;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-slate-950/90 backdrop-blur-md sticky top-0 z-50 p-5 border-b border-cyan-500/30">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center gap-3">
+                <img src="logo_mascota.png" alt="" class="w-10 h-10 rounded-full border border-cyan-500 shadow-lg shadow-cyan-500/20" onerror="this.style.display='none'">
+                <h1 class="text-2xl md:text-3xl font-black tracking-tighter accent-cyan uppercase">
+                    D'LEOS <span class="text-white">DIGITAL 593</span>
+                </h1>
+            </div>
+            <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest items-center">
+                <a href="#portafolio" class="hover:text-cyan-400">Trabajos</a>
+                <a href="#contacto" class="hover:text-cyan-400">Contacto</a>
+                <a href="https://wa.me/593963962459" class="btn-neon px-8 py-2.5 rounded-full">COTIZAR</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="h-[85vh] flex items-center justify-center text-center relative overflow-hidden">
+        <div id="hero-slider"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950 z-10"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-20 px-6">
+            <h2 class="text-6xl md:text-8xl font-black mb-8 leading-none tracking-tighter">
+                PUBLICIDAD <br><span class="accent-cyan">PREMIUM</span>
+            </h2>
+            <p class="text-slate-200 text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium">
+                Cajas de Acrílico, Letreros 3D, Impresiòn 3D, Diseño y Branding para locales.
+            </p>
+            <a href="https://wa.me/593963962459" class="btn-neon px-12 py-5 rounded-2xl font-black text-2xl inline-flex items-center gap-4">
+                <i class="fab fa-whatsapp"></i> COTIZAR AHORA
+            </a>
+        </div>
+    </header>
+
+    <section id="portafolio" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-4xl font-black mb-16 text-center uppercase accent-cyan">Proyectos Realizados</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="rounded-3xl overflow-hidden glow-card">
+                    <div class="portfolio-img">
+                        <img src="consultorio.jpg" alt="Consultorio Integral">
+                        <span class="tech-tag">Trabajo Integral Local</span>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="font-black text-xl accent-cyan mb-2">CONSULTORIO MÉDICO</h5>
+                        <p class="text-sm text-slate-400 leading-relaxed">Caja de luz exterior, vinil en puertas y logo 3D interior con luz cálida indirecta.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden glow-card">
+                    <div class="portfolio-img">
+                        <img src="lavid.jpg" alt="Lavid Restaurante">
+                        <span class="tech-tag">Luz Indirecta</span>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="font-black text-xl accent-cyan mb-2">LAVID RESTAURANTE</h5>
+                        <p class="text-sm text-slate-400 leading-relaxed">Letras corpóreas color vino con retroiluminación LED cálida.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden glow-card">
+                    <div class="portfolio-img">
+                        <img src="caja_acrilico.jpg" alt="Caja Acrílico">
+                        <span class="tech-tag">Acrílico + LED</span>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="font-black text-xl accent-cyan mb-2">CAJA DE ACRÍLICO</h5>
+                        <p class="text-sm text-slate-400 leading-relaxed">Caja de acrílico premium con luz LED y detalles en vinil troquelado.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden glow-card">
+                    <div class="portfolio-img">
+                        <img src="hunter.jpg" alt="Hunter">
+                        <span class="tech-tag">Luz Directa</span>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="font-black text-xl accent-cyan mb-2">LETRERO HUNTER</h5>
+                        <p class="text-sm text-slate-400 leading-relaxed">Letras 3D en acrílico con iluminación frontal blanca.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-slate-950 py-20 px-6 border-t-2 border-cyan-500/40">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-4xl font-black accent-cyan mb-10 uppercase">D'LEOS DIGITAL 593</h4>
+            <div class="flex justify-center gap-10 mb-12">
+                <a href="https://facebook.com/dleosdigital593" class="text-4xl text-slate-500 hover:text-cyan-400 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/dleosdigital593" class="text-4xl text-slate-500 hover:text-cyan-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@dleosdigital593" class="text-4xl text-slate-500 hover:text-cyan-400 transition"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="text-slate-500 font-bold tracking-widest text-xs uppercase">Quito, Ecuador &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const imagenes = [
+            'consultorio.jpg',
+            'lavid.jpg',
+            'caja_acrilico.jpg',
+            'hunter.jpg'
+        ];
+        
+        let currentIdx = 0;
+        const sliderDiv = document.getElementById('hero-slider');
+
+        function slideNext() {
+            // Verificamos que cargue la imagen
+            sliderDiv.style.backgroundImage = `url('${imagenes[currentIdx]}')`;
+            currentIdx = (currentIdx + 1) % imagenes.length;
+        }
+
+        setInterval(slideNext, 4000);
+        slideNext();
+    </script>
+</body>
+</html>
